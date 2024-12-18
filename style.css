@@ -1,0 +1,90 @@
+/* Ogólne ustawienia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Ciemne tło */
+    color: #e0e0e0; /* Jasny tekst */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Nagłówek */
+header {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #f5a623; /* Akcentowy kolor */
+}
+
+/* Główna sekcja */
+main {
+    flex: 1;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#file-tree ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+#file-tree li {
+    margin: 1rem 0; /* Zwiększony margines */
+    padding: 1rem; /* Większy padding */
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    transition: background-color 0.3s;
+    width: 100%; /* Szerokość na 100% */
+}
+
+#file-tree li.folder {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#file-tree li.file a {
+    text-decoration: none;
+    color: #f5a623;
+}
+
+#file-tree li.folder span {
+    color: #e0e0e0;
+}
+
+#file-tree li.folder.open span {
+    color: #f5a623;
+}
+
+#file-tree li:hover {
+    background-color: #2c2c2c;
+}
+
+/* Stopka */
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #999;
+}
